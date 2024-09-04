@@ -57,7 +57,7 @@ class _RiveRefreshScreenState extends State<RiveRefreshScreen> {
         child: CustomScrollView(
           slivers: [
             const SliverAppBar(
-              title: Text('Pull to refresh'),
+              title: Text('Try pulling to refresh ＼(ﾟｰﾟ＼)'),
               pinned: true,
             ),
             const HeaderLocator.sliver(),

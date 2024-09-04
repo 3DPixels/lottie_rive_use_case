@@ -9,8 +9,8 @@ class RiveLoginScreen extends StatefulWidget {
 }
 
 class _RiveLoginScreenState extends State<RiveLoginScreen> {
-  String validEmail = "Dandi@gmail.com";
-  String validPassword = "12345";
+  String validEmail = "admin";
+  String validPassword = "admin";
 
   /// input form controller
   FocusNode emailFocusNode = FocusNode();

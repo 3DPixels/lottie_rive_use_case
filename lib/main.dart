@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lottie_rive_use_case/screen1.dart';
+import 'package:lottie_rive_use_case/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData.dark(useMaterial3: true).copyWith(
+        pageTransitionsTheme: const PageTransitionsTheme(
+          builders: <TargetPlatform, PageTransitionsBuilder>{
+            TargetPlatform.android:
+                CupertinoPageTransitionsBuilder(), // Apply this to every platforms you need.
+          },
+        ),
         colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.green, brightness: Brightness.dark),
       ),
-      home: const Screen1(),
+      home: const HomeScreen(),
     );
   }
 }
